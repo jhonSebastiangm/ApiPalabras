@@ -1,0 +1,24 @@
+
+<app-header></app-header>
+<div class="container">
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Column</th>
+            <th scope="col">Palabra</th>
+            <th scope="col">Cantidad Repetida</th>
+            <th scope="col">Frase Completa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let res of Respuestas;let i=index'>
+            <th scope="row">1</th>
+            <td>{{res.palabra}}</td>
+            <td>{{res.cantidadRepetida}}</td>
+            <td>{{res.fraseString}}</td>
+          </tr>
+        </tbody>
+    </table>
+</div>
+
+<app-footer></app-footer>
